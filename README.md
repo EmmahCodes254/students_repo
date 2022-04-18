@@ -34,6 +34,10 @@ $ source venv/bin/activate
 $ pip install requirements.txt
 $ python3 app.py
 ```
+**NB**: Before pushing your code to github, You should add it your virtual environment to gitignore file. Then, you should create requirements. txt file and populate it with the packages you have installed. Then, on your production server, create the virtual environment and run pip install -r requirements
+- Ignore all files or folders that start with a dot .
+- Ignore pycache folders
+
 ## Helpful Links
 * [How To Use the sqlite3 Module in Python 3](https://www.digitalocean.com/community/tutorials/how-to-use-the-sqlite3-module-in-python-3)
 * [How To Install and Set Up a Local Programming Environment for Python 3](https://www.digitalocean.com/community/tutorial_series/how-to-install-and-set-up-a-local-programming-environment-for-python-3)
