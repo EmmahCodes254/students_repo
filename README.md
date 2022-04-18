@@ -31,7 +31,7 @@ $ python3 -m venv venv
 #activate
 $ source venv/bin/activate
 # install the requirements
-$ pip install requirements.txt
+$ pip install -r requirements.txt
 $ python3 app.py
 ```
 **NB**: Before pushing your code to github, You should add it your virtual environment to gitignore file. Then, you should create requirements. txt file and populate it with the packages you have installed. Then, on your production server, create the virtual environment and run pip install -r requirements
