@@ -5,11 +5,11 @@
 {% block body %}
 <div class="container">
     <div>
-        <div class="col-md-12" style="color: blue; font-size: 26px; text-decoration: underline;">Students List</div>
+        <div class="col-md-12">Students List</div>
     </div>
     <div>
-        <table class="table">
-            <thead style="background-color: brown; color: aliceblue;">
+        <table class="styled-table">
+            <thead>
                 <th>ID</th>
                 <th>First Name</th>
                 <th>Last Name</th>
@@ -31,11 +31,11 @@
                     <td>{{ student.hobbies }}</td>
                     <td>{{ student.country }}</td>
                     <td>
-                        <span style="font-size: 24px; color: green">
-                        <a href="/{{student.id}}/edit"> <i class="fas fa-edit"></i></a> </span>
-                            |
-                        <span style="font-size: 24px; color: red">
-                            <a href="/{{student.id}}/delete"> <i class="fas fa-trash-alt"></i></a> </span>
+                        <span>
+                        <a href="/{{student.id}}/edit"> <i style="color: green !important; font-size: 24px;" class="fas fa-edit"></i></a> </span>
+                         
+                        <span>
+                            <a href="/{{student.id}}/delete"> <i style="color: red !important; font-size: 24px;" class="fas fa-trash-alt"></i></a> </span>
                     </td>
                 </tr>
                 {% endfor %}

@@ -102,4 +102,4 @@ def delete(id):
     return render_template('delete.html')
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)

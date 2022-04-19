@@ -5,7 +5,7 @@
 {% block body %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#" style="color: blue; font-size: 32px; font-weight: bold;">My App</a>
+      <a class="navbar-brand" href="#">My App</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -13,10 +13,10 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             
-            <a class="nav-link active" aria-current="page" href="{{ url_for('RetrieveList') }}" style="font-weight: bold; color: blue;">Home</a>
+            <a class="nav-link active" aria-current="page" href="{{ url_for('RetrieveList') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ url_for('create') }}" style="color: blue; font-weight: bold;">Create Student</a>
+            <a class="nav-link" href="{{ url_for('create') }}">Create Student</a>
           </li>
         </ul>
       </div>
