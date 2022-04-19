@@ -1,4 +1,5 @@
 from crypt import methods
+import os
 from os import abort
 from flask import Flask, render_template, request, redirect
 from models import db, StudentModel
@@ -7,7 +8,11 @@ from models import db, StudentModel
 app = Flask(__name__)
 
 # adding configuration for using a sqlite database
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data.db'
+uri = os.getenv("DATABASE_URL")
+if uri.startswith("postgres://"):
+    uri = uri.replace("postgres://", "postgresql://", 1)
+
+SQLALCHEMY_DATABASE_URI = uri or 'sqlite:///data_base.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 
 db.init_app(app)
